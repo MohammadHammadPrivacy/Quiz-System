@@ -1,0 +1,120 @@
+#maindiv
+{
+    transform: none; margin-top: 2%;
+}
+a
+{
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+#my_ul, #question_num_ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+}
+#my_ul li, #question_num_ul li
+{
+    border-bottom: 1px solid #ededed;
+}
+#my_ul li a, #question_num_ul li a
+{
+    display: block;
+    padding: 5px 10px;
+    font-size: 18px;
+    position: relative;
+    color: #555;
+    border-radius: 5px;
+}
+#my_ul li a:hover, #question_num_ul li a:hover, .active
+{
+    background-color: #ff8001;
+    transition: all 0.8s;
+    color: white !important;
+    cursor: pointer;
+}
+.fa-angle-right:before
+{
+    content: "";
+}
+.fa-angle-right:after
+{
+    content: "\f105";
+    right: 15px;
+    position: absolute;
+}
+.active
+{
+    background-color: #ff8001;
+    color: white !important;
+}
+#question_numbers
+{
+    overflow-y: hidden;
+    height: 50%  !important;border-radius: 5px;
+}
+::-webkit-scrollbar
+{
+    background-color: #ff8001;
+    width: 5px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #ff8001;
+}
+::-webkit-scrollbar-track
+{
+    background: white;
+}
+input[type='radio'], input[type='checkbox']
+{
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.hidden_div
+{
+    line-height: initial;
+    display: none;
+}
+.showing_div
+{
+    line-height: initial;
+    position: absolute;
+    width: 100%;
+    top: 17%;
+}
+label
+{
+    display: inline;
+}
+.modal-body
+{
+    text-align: center;
+}
+#end
+{
+    position :fixed;
+    left: 85%;
+    top :2%;
+    display: none;
+}
+@media (max-width: 991px)
+{
+    .col-md-12 ul
+    {
+        margin-top: 50px !important;
+        height: 30px;
+        z-index: 2;
+    }
+    .col-md-12 ul li a:not(.active)
+    {
+        float: left; width: 130px; display: none !important;
+    }
+    #question_content
+    {
+        margin-top: 20px;
+    }
+}

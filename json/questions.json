@@ -1,0 +1,358 @@
+{
+    "IOS305": {
+        "1": [
+            {
+                "question": "Both BIOS and UEFI are used in newer computers?",
+                "1": "true",
+                "2": "false",
+                "3": "",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "By default, GRUB is stored in the master boot record?",
+                "1": "true",
+                "2": "false",
+                "3": "",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "Which command is used to manage system services?",
+                "1": "systemd",
+                "2": "systemctl",
+                "3": "sysVinit",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "Name the two directory paths where systemd unit files are stored.",
+                "1": "/etc/systemd/system",
+                "2": "/etc/lib/systemd/system",
+                "3": "/usr/lib/systemd/system",
+                "4": "/bin/systemd/system",
+                "true": "1_3"
+            },
+            {
+                "question": "What would the command systemctl restart rsyslog do?",
+                "1": "start the rsyslog target",
+                "2": "restart the systemctl service",
+                "3": "restart the rsyslog service",
+                "4": "",
+                "true": "3"
+            },
+            {
+                "question": "In which target does the X window and the graphical desktop interface become available?",
+                "1": "graphical target",
+                "2": "multi-user target",
+                "3": "rescue target",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "What is the new system initialization scheme introduced in RHEL7?",
+                "1": "systemd",
+                "2": "sysctl",
+                "3": "sysVinit",
+                "4": "systemctl",
+                "true": "1"
+            },
+            {
+                "question": "Which command enables you to make sure that a target is no longer eligible for automatic start on system boot?",
+                "1": "systemctl disable unit",
+                "2": "systemctl enable unit",
+                "3": "systemctl set-default unit",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "Which command should you use to show all service units that are currently loaded?",
+                "1": "systemd",
+                "2": "sysctl",
+                "3": "sysVinit",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "How do you create a want for a service?",
+                "1": "by masking this service",
+                "2": "by creating a symbolic link in the/etc/systemd/system directory",
+                "3": "by isolating this service",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "How do you switch the current operational target to the rescue target?",
+                "1": "target rescue.target start",
+                "2": "systemctl resc.target",
+                "3": "systemctl isolate rescue.target",
+                "4": "",
+                "true": "3"
+            },
+            {
+                "question": "Why can it happen that you get the message that a target cannot be isolated?",
+                "1": "if set AllowIsolate is not set to yes in their configuration file",
+                "2": "if systemctl command is not available",
+                "3": "if the target is already running",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "You want to shut down a systemd service, but before doing that you want to know which other units have dependencies to this service. Which command would you use?",
+                "1": "systemctl list-dependencies service",
+                "2": "systemctl dependencies service",
+                "3": "systemd list-dependencies service",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "Which command shows all service unit files on your system that are currently loaded?",
+                "1": "systemctl --type=service",
+                "2": "systemctl --type=service --all",
+                "3": "systemctl --list-services",
+                "4": "systemctl --show-units | grep services",
+                "true": "1"
+            },
+            {
+                "question": "What is the best solution to avoid conflicts between incompatible units?",
+                "1": "Nothing, the unit files have defined for themselves which units they are not compatible with.",
+                "2": "Disable the service using systemctl disable.",
+                "3": "Unmask the service using systemctl unmask.",
+                "4": "Mask the service using systemctl mask.",
+                "true": "1"
+            },
+            {
+                "question": "Which of the following is not a valid status for systemd services?",
+                "1": "Running(active)",
+                "2": "Running(exited)",
+                "3": "Running(waiting)",
+                "4": "Running(dead)",
+                "true": "4"
+            },
+            {
+                "question": "To allow targets to be isolated, you need a specific statement in the target unit file. Which of the following describes that statement?",
+                "1": "AllowIsolate",
+                "2": "Isolate",
+                "3": "SetIsolate",
+                "4": "Isolated",
+                "true": "1"
+            },
+            {
+                "question": "Which of the following is not a valid systemd unit type?",
+                "1": "service",
+                "2": "udev",
+                "3": "mount",
+                "4": "socket",
+                "true": "2"
+            },
+            {
+                "question": "You want to find out which other systemd units have dependencies to this specific unit. Which command would you use?",
+                "1": "systemd list-dependencies --reverse",
+                "2": "systemctl list-dependencies --reverse",
+                "3": "systemctl status my.unit --show-deps",
+                "4": "systemd status my.unit --show-deps –r",
+                "true": "2"
+            },
+            {
+                "question": "Which of the following is not a valid command while working with units in systemctl?",
+                "1": "systemctl unit start",
+                "2": "systemctl status -l unit",
+                "3": "systemctl mask unit",
+                "4": "systemctl disable unit",
+                "true": "1"
+            }
+        ],
+        "2": [
+            {
+                "question": "The systemd command may be used to rebuild a new kernel.",
+                "1": "True",
+                "2": "False",
+                "3": "",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "What is the location of the grub.efi file in the UEFI-based systems?",
+                "1": "/boot/efi/EFI/redhat",
+                "2": "/boot/grub2/grub.cfg",
+                "3": "/bin/efi/EFI/redhat",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "What is the location of the grub.cfg file in the BIOS-based systems?",
+                "1": "/boot/efi/EFI/redhat",
+                "2": "/boot/grub2/grub.cfg",
+                "3": "/bin/efi/EFI/redhat",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "Which file stores the location information of the boot partition on the BIOS systems?",
+                "1": "/boot/bios",
+                "2": "grub.conf",
+                "3": "/proc/partition",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "Which file would we want to view to obtain processor information?",
+                "1": "/proc/cpuinfo",
+                "2": "/proc/meminfo",
+                "3": "/proc/partition",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "'Which file would we want to view to obtain memory information?",
+                "1": "/proc/cpuinfo",
+                "2": "/proc/meminfo",
+                "3": "/proc/partition",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "Which command can we use to determine the kernel release information?",
+                "1": "kernel-release",
+                "2": "dmesg",
+                "3": "uname -r",
+                "4": "",
+                "true": "3"
+            },
+            {
+                "question": "The lsmod command is used to rebuild modules.",
+                "1": "True",
+                "2": "False",
+                "3": "",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "Which command can we use to unload a module?",
+                "1": "modprobe",
+                "2": "lsmod",
+                "3": "modinfo",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "We cannot use the yum command to upgrade a Linux kernel. True or False?",
+                "1": "True",
+                "2": "False",
+                "3": "",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "Which configuration file should you modify to apply common changes to GRUB 2?",
+                "1": "/boot/grub2/grub.cfg",
+                "2": "/etc/grub.cfg",
+                "3": "/grub2/grub.config",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "After applying changes to GRUB 2 configuration, which command should you run?",
+                "1": "modprobe",
+                "2": "mkconfig",
+                "3": "grub2-mkconfig",
+                "4": "",
+                "true": "3"
+            },
+            {
+                "question": "Which command shows a list of kernel modules that are currently loaded?",
+                "1": "lsmod",
+                "2": "modprobe",
+                "3": "modinfo",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "How do you install a new version of the kernel?",
+                "1": "yum update",
+                "2": "yum update kernel",
+                "3": "yum kernel install",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "Which command enables you to discover kernel module parameters?",
+                "1": "lsmod",
+                "2": "modinfo",
+                "3": "modprob",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "How do you unload a kernel module?",
+                "1": "modprobe -r",
+                "2": "lsmod -r",
+                "3": "modinfo",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "It contains drivers that are needed to start your server",
+                "1": "initramfs",
+                "2": "grub2",
+                "3": "systemd",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "Setting the GRUB_TIMEOUT parameter to 10, will?",
+                "1": "Restart the system after 10 seconds.",
+                "2": "Boot the system into the default kernel after 10 seconds.",
+                "3": "Shutdown the system after 10 seconds.",
+                "4": "",
+                "true": "2"
+            },
+            {
+                "question": "You can apply permanent fixes to the GRUB 2 configuration using the option:",
+                "1": "GRUB_CMDLINE_LINUX",
+                "2": "GRUB_TIMEOUT",
+                "3": "GRUB_RHGB",
+                "4": "",
+                "true": "1"
+            },
+            {
+                "question": "To list all installed kernels use:",
+                "1": "lsmod kernel-",
+                "2": "yum display kernel",
+                "3": "yum installed kernel-*",
+                "4": "",
+                "true": "3"
+            }
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "5": [
+
+        ],
+        "6": [
+
+        ],
+        "7": [
+
+        ],
+        "8": [
+
+        ],
+        "9": [
+
+        ],
+        "10": [
+
+        ],
+        "11": [
+
+        ],
+        "12": [
+
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لينوكس 2</title>
+    <script src="../scripts/jquery.js"></script>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <script src="../scripts/bootstrap.min.js"></script>
+</head>
+<body style="user-select:none;">
+    <div class="container">
+        <div class="row" id="maindiv">
+            <div class="col-lg-2 col-md-12">
+                <ul id="my_ul">
+                    <li><a id="1" class="fa fa-angle-right active" href="#">Chapter 1</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-10 col-md-12">
+                <div class="row">
+                    <div id='question_numbers' class="col-lg-3 col-md-12"></div>
+                    <div id='question_content' class="col-lg-9 col-md-12"></div>
+                </div>
+                <button type="button" id="end" disabled class="btn btn-danger" data-toggle="modal" data-target="#final">End Exam</button>
+            </div>
+        </div>
+    </div>
+    <div id="final" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body" id="final_body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="change_chapter" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body" id="change_chapter_body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="ok">Yes</button>
+                    <button type="button" class="btn btn-secondary" id="no">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../scripts/Script.js"></script>
+</html>

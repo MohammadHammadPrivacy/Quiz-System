@@ -1,8 +1,8 @@
-var temp = "";
+var temp = "<li><a id='1' class='fa fa-angle-right active' href='#'>Chapter 1</a></li>";
 for(var index = 0; index < 11; index++) {
     temp += "<li><a id='" + (index + 2) + "' class='fa fa-angle-right' href='#'>Chapter " + (index + 2) + "</a></li>";
 }
-$('#my_ul').html($('#my_ul').html() + temp);
+$('#my_ul').html(temp);
 temp = "";
 var arr = JSON.parse($.getJSON({'url': "../json/questions.json", 'async': false}).responseText);
 function Show_Question() {
@@ -220,4 +220,3 @@ $('#no').on('click', function () {
         $('#ok').val('');
     }, 0);
 });
-$('#1').attr('href', '#');

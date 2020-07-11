@@ -220,4 +220,4 @@ $('#no').on('click', function () {
         $('#ok').val('');
     }, 0);
 });
-$('#my_ul li a')[0].attr('href', '#');
+$('#1').attr('href', '#');

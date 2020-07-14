@@ -25,7 +25,9 @@ function Render_List_Of_Question(id) {
     if(arr.IOS305[id].length == 0) {
         html = "<p>There Isn't any questions for this chapter.</p>";
         //$('#question_content').html('<div>sdsd</div>');
-        $('#question_numbers').html(html).show('slow');
+        $('#question_numbers').hide();
+        $('#question_numbers').html(html);
+        $('#question_numbers').show('slow');
         return;
     }
     html += "<ul id='question_num_ul'>";

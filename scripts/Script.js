@@ -1,4 +1,4 @@
-$('.container')[0].hide();
+$('.container').first().hide();
 var temp = "<li><a id='1' class='fa fa-angle-right active' href='#'>Chapter 1</a></li>";
 for(var index = 0; index < 11; index++) {
     temp += "<li><a id='" + (index + 2) + "' class='fa fa-angle-right' href='#'>Chapter " + (index + 2) + "</a></li>";
@@ -224,6 +224,6 @@ $('#no').on('click', function () {
     }, 0);
 });
 $( document ).ready(function() {
-    $('.cssload-container').hide();
+    $('.cssload-container').first().hide();
     $('.container')[0].show('slow');
 });

@@ -119,7 +119,11 @@ label
     }
 }
 .cssload-container{
-	position:relative;
+	position:absolute;
+	top: 50%;
+   	bottom: 50%;
+ 	left: 50%;
+  	right: 50%;
 }
 	
 .cssload-whirlpool,

@@ -224,6 +224,6 @@ $('#no').on('click', function () {
     }, 0);
 });
 $( document ).ready(function() {
-    $('.cssload-container').first().hide();
-    $('.container')[0].show('slow');
+    $('.cssload-container').hide();
+    $('.container').first().show('slow');
 });
